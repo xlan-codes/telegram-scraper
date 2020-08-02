@@ -20,6 +20,8 @@ def config_files_setup():
     setup.close()
     print("\n[+] setup complete !")
 
+
+
 try:
     config_files_setup()
 except IndexError:

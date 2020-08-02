@@ -23,13 +23,15 @@ class AuthService():
             print("[!] run python3 setup_script.py first !!\n")
             sys.exit(1)
 
-        client = TelegramClient(phone, api_id, api_hash)
+        self.client = TelegramClient(phone, api_id, api_hash)
 
-        client.connect() # connect to telegram
-        if not client.is_user_authorized(): # check if user authenticated
-            client.send_code_request(phone)
+        self.client.connect() # connect to telegram
+        if not self.client.is_user_authorized(): # check if user authenticated
+            self.client.send_code_request(phone)
             os.system('clear')
-            client.sign_in(phone, input('[+] Enter the code: '))
+            self.client.sign_in(phone, input('[+] Enter the code: '))
 
-        return client
+        return self.client
 
+    def disconnect(self):
+        self.client.disconnect()

@@ -1,14 +1,14 @@
 import setuptools
 
 setuptools.setup(
-    name="telegramscraper", # Replace with your own username
+    name="telegramscraper",
     version="0.0.1",
     author="Hekuran Islamaj",
     author_email="hekuran.islamai@gmail.com",
     description="telegram scrape and send sms to user and groups",
     long_description="Scraper for telegram users",
     long_description_content_type="text/markdown",
-    scripts=['setup_script'],
+    scripts=['setup_script.py'],
     install_requires=[
         'cython>=0.28',
         'pandas>=1.0.4',
