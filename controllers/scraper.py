@@ -55,7 +55,6 @@ class Scrape:
 
         print('[+] Fetching Members...')
         time.sleep(1)
-        all_participants = []
         all_participants = self.client.get_participants(target_group, aggressive=True)
 
         print('[+] Saving In file...')
