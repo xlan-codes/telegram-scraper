@@ -4,7 +4,7 @@ import argparse
 
 
 def run():
-    parser = argparse.ArgumentParser(description="Football Scraper")
+    parser = argparse.ArgumentParser(description="Telegram Scraper")
 
     parser.add_argument("--send-sms", help="Send SMS")
     parser.add_argument("--scrape-contact", help="Send SMS")
