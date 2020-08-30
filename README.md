@@ -12,7 +12,7 @@
     
     
 
-Install requierments
+Install requierments and useage
     
     python setup.py -i
 
